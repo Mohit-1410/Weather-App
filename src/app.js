@@ -50,20 +50,20 @@ app.get('', (req, res) => {
     //res.render('index') 
      res.render('index', {
          title: 'Weather',
-         name: 'Ajaiy'        
+         name: 'Mohit'        
      })
 })
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
-        name: 'Dwaraknath'       
+        name: 'Mohit'       
     })
 })
 app.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'This is some helpful text',
         title: 'Help',
-        name: 'Benchmark'
+        name: 'Mohit'
     })
 })
 
@@ -135,7 +135,7 @@ app.get('*', (req,res) => {
     //res.send('My 404 Page')
     res.render('404', {
         title: '404',
-        name: 'Dwaraknath',
+        name: 'Mohit',
         errorMessage: 'Page not found'
     })
 })
